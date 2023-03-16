@@ -6,7 +6,7 @@ document.addEventListener('keydown', (e) => {
     const audio = document.querySelector(`audio[data-key="${key}"]`);
 
     element ? element.classList.add('playing') : '';
-    audio.play();
+    audio ? audio.play() : '';
 });
 
 document.addEventListener('keyup', (e) => {
